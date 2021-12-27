@@ -10,42 +10,33 @@
                                         <a href="#" ><span class="text-white"><em class="icon ni ni-line-chart-up"></em></span></a>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <div class="timer">
-                                            <h4 class="pt-3">
-                                                <em class="icon ni ni-clock"></em>
-                                                {{date('H:i:s')}}
-                                            </h4>
-                                        </div>
                                             @foreach ($market->sinyals as $sinyal)
                                                 @if ($sinyal->waktu === $time)
                                                     <div class="d-flex align-items-center">
                                                         @if ($sinyal->signal === "BUY")
-                                                            <h3 class="text-success text-bold pt-3"><em class="icon ni ni-upword-alt-fill"></em>
+                                                            <h4 class="text-success text-bold pt-3"><em class="icon ni ni-upword-alt-fill"></em>
                                                                 {{$sinyal->signal}}
-                                                            </h3>
+                                                            </h4>
                                                         @else
-                                                            <h3 class="text-danger text-bold pt-3"><em
+                                                            <h4 class="text-danger text-bold pt-3"><em
                                                                 class="icon ni ni-downward-alt-fill"></em>
                                                                 {{$sinyal->signal}}
-                                                            </h3>
+                                                            </h4>
                                                         @endif
                                                     </div>
                                                     @elseif ($sinyal->notif === $time)
-                                                    <h3 class="text-warning text-bold pt-3"><em class="icon ni ni-na"></em>
+                                                    <h5 class="text-warning text-bold pt-3"><em class="icon ni ni-na"></em>
                                                         Hold
-                                                    </h3>
+                                                    </h5>
                                                 @endif
                                             @endforeach
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <div class="pt-2">
                                             <em class="icon ni ni-code"></em>
-                                            {{date('H:i:s')}}
+                                          {{date('H:i:s')}}
                                         </div>
-                                        <div class="pt-2">
-                                            <em class="icon ni ni-signal"></em>
-                                            {{date('H:i')}}
-                                        </div>
+
                                         <div class="pt-2">
                                             @foreach ($market->sinyals as $sinyal)
                                                 @if ($sinyal->waktu === $time)

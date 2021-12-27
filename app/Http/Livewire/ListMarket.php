@@ -19,7 +19,7 @@ class ListMarket extends Component
     public function render()
     {
         return view('livewire.list-market', [
-            'markets' => Market::paginate(5)
+            'markets' => Market::paginate(10)
         ]);
     }
 

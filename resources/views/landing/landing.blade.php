@@ -8,7 +8,7 @@
         <div class="row flex-lg-row-reverse align-items-center justify-content-between g-gs">
             <div class="col-lg-6 mt-lg-0 mt-n4">
                 <div class="header-image header-image-s2">
-                    <img src="images/ss.png" alt="">
+                    <img src="images/home.png" alt="">
                 </div><!-- .header-image -->
             </div><!-- .col- -->
             <div class="col-lg-5 col-md-10">
