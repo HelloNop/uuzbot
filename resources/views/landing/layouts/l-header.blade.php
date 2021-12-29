@@ -4,10 +4,10 @@
                         <div class="header-wrap">
                             <div class="header-logo">
                                 <a href="/" class="logo-link">
-                                    <img class="logo-light logo-img" src="./images/uuzbot.png"
-                                        srcset="./images/uuzbot.png 2x" alt="logo">
-                                    <img class="logo-dark logo-img" src="./images/uuzbot-dark.png"
-                                        srcset="./images/uuzbot-dark.png 2x" alt="logo-dark">
+                                    <img class="logo-light logo-img" src="images/uuzbot.png"
+                                        srcset="images/uuzbot.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="images/uuzbot-dark.png"
+                                        srcset="images/uuzbot-dark.png 2x" alt="logo-dark">
                                 </a>
                             </div>
                             <div class="header-toggle">

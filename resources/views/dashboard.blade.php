@@ -8,6 +8,5 @@
     <div class="row">
         @livewire('dashboard')
         @livewire('candle-stick')
-    </div>
 </div>
 @endsection

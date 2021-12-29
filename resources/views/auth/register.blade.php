@@ -19,6 +19,23 @@
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
                     <div class="form-group">
+                        <label class="form-label" for="tipeAkun">Tipe Akun</label>
+                        <div class="form-control-wrap">
+                            <div class="form-control-select">
+                                <select id="tipeAkun" class="form-control @error('tipeAkun') is-invalid @enderror" name="tipeAkun">
+                                    <option value="">-- Langganan atau Gratis --</option>
+                                    <option value="langganan">Langganan Rp. 194.000/Bulan</option>
+                                    <option value="gratis">Gratis</option>
+                                </select>
+                            </div>
+                            @error('tipeAkun')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="form-label" for="name">Nama</label>
                         <div class="form-control-wrap">
                             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror"
@@ -31,8 +48,6 @@
                             </span>
                             @enderror
                         </div>
-
-
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="email">Email</label>

@@ -52,6 +52,7 @@ class ListUser extends Component
             'email' => $this->email,
             'password' => bcrypt($this->password),
             'roles' => 'admin',
+            'tipeAkun' => 'admin',
             'email_verified_at' => now(),
             'created_at' => now(),
             'updated_at' => now(),

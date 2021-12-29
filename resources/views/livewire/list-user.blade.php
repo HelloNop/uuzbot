@@ -92,6 +92,7 @@
                                     <div class="nk-tb-col "><span class="sub-text">Role</span></div>
                                     <div class="nk-tb-col "><span class="sub-text">Tanggal Daftar</span></div>
                                     <div class="nk-tb-col"><span class="sub-text">Status</span></div>
+                                    <div class="nk-tb-col"><span class="sub-text">Tipe Akun</span></div>
                                     <div class="nk-tb-col"><span class="sub-text">Action</span></div>
                                     <div class="nk-tb-col"><span class="sub-text">Edit</span></div>
                                 </div>
@@ -130,13 +131,21 @@
                                         </div>
                                         <div class="nk-tb-col "><span>{{$user->roles}}</span></div>
                                     @endif
-                                    <div class="nk-tb-col"><span>{{$user->created_at->diffForHumans()}}</span></div>
+                                        <div class="nk-tb-col"><span>{{$user->created_at->diffForHumans()}}</span></div>
                                     @if ($user->roles === 'user')
-                                    <div class="nk-tb-col"><span class="tb-status text-danger">Belum VIP</span></div>
+                                        <div class="nk-tb-col"><span class="tb-status text-danger">Belum VIP</span></div>
                                     @else
-                                    <div class="nk-tb-col"><span class="tb-status text-success">Sudah VIP</span></div>
+                                        <div class="nk-tb-col"><span class="tb-status text-success">Sudah VIP</span></div>
                                     @endif
-
+                                    {{-- tipeakun --}}
+                                    @if ($user->tipeAkun === 'langganan')
+                                        <div class="nk-tb-col"><span class="tb-status text-blue">{{$user->tipeAkun}}</span></div>
+                                        @elseif ($user->tipeAkun === 'admin')
+                                        <div class="nk-tb-col"><span class="tb-status text-danger">{{$user->tipeAkun}}</span></div>
+                                        @elseif ($user->tipeAkun === 'gratis')
+                                        <div class="nk-tb-col"><span class="tb-status text-warning">{{$user->tipeAkun}}</span></div>
+                                    @endif
+                                    {{-- tipeakun --}}
                                     <div class="nk-tb-col"><span class="tb-status text-success"><a wire:click = "suspend({{ $user->id}})"
                                                 class="btn btn-sm btn-icon btn-trigger" data-toggle="tooltip"
                                                 data-placement="top" title="" data-original-title="Suspend"><em

@@ -36,7 +36,7 @@
                     <div class="form-group">
                         <div class="form-label-group">
                             <label class="form-label" for="password">Password</label>
-                            <a class="link link-primary link-sm" href="reset-password">Lupa
+                            <a class="link link-primary link-sm" href="password/reset">Lupa
                                 Password?</a>
                         </div>
                         <div class="form-control-wrap">
