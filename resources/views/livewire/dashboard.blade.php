@@ -7,7 +7,7 @@
                                 <div  class="m-2">
                                    <div class="d-flex justify-content-between">
                                         <span class="text-white">{{$market->name}}</span>
-                                        <a href="#" ><span class="text-white"><em class="icon ni ni-line-chart-up"></em></span></a>
+                                        <a  ><span class="text-white"><em class="icon ni ni-line-chart-up"></em></span></a>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                             @foreach ($market->sinyals as $sinyal)
@@ -25,15 +25,15 @@
                                                         @endif
                                                     </div>
                                                     @elseif ($sinyal->notif === $time)
-                                                    <h5 class="text-warning text-bold pt-3"><em class="icon ni ni-na"></em>
-                                                        Hold
-                                                    </h5>
+                                                    <h6 class="text-warning text-bold pt-3"><em class="icon ni ni-na"></em>
+                                                        Open Tahan
+                                                    </h6>
                                                 @endif
                                             @endforeach
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <div class="pt-2">
-                                            <em class="icon ni ni-code"></em>
+                                            <em class="icon ni ni-clock"></em>
                                           {{date('H:i:s')}}
                                         </div>
 
@@ -52,4 +52,3 @@
                 @endforeach
             </div>
         </div>
-

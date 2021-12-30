@@ -27,7 +27,7 @@ class cekRole
             }
         }
 
-        return redirect('/upgrade');
+        return redirect('/profile');
 
     }
 }

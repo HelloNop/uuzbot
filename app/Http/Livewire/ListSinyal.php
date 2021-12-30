@@ -24,7 +24,7 @@ class ListSinyal extends Component
     public function render()
     {
         return view('livewire.list-sinyal',[
-            'sinyals' => Sinyal::with('market')->orderBy('market_id','ASC')->orderBy('waktu', 'ASC')->paginate(30)
+            'sinyals' => Sinyal::with('market')->orderBy('market_id','ASC')->orderBy('waktu', 'ASC')->simplePaginate(30)
 
         ]);
     }

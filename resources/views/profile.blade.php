@@ -1,6 +1,6 @@
 @extends('template.main')
 
-@section('title', 'Upgrade Akun')
+@section('title', 'Profile')
 
 @section('content')
 
@@ -37,7 +37,7 @@
                     <h6 class="mt-3">Petunjuk Pembayaran</h6>
                     <p>Silahkan lakukan transfer sebesar Rp. 194.000 ke Nomor <strong> BNI 0802128055 atas nama Nofri Satriawan</strong></p>
                     <h6 class="mt-3">Petunjuk aktifasi</h6>
-                    <p>Aktifkan akun dengan menekan tombol aktifasi akun, dan sertakan bukti transfer serta email yang digunakan saat pendaftaran</p>
+                    <p>Aktifkan akun dengan konfirmasi via whatsapp, dan sertakan bukti transfer serta email yang digunakan saat pendaftaran</p>
                     <div class="mt-4">
                         <a href="https://wa.me/6289504190395?text=Saya%20ingin%20konfirmasi%20member%20uuzbot%20langganan%20" class="btn btn-lg btn-outline-primary">Konfrimasi via Whatsapp</a>
                     </div>

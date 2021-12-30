@@ -46,5 +46,5 @@ Route::middleware(['auth', 'cekRole:admin'])->group(function () {
 
 
 Route::get('/dashboard', function () { return view('dashboard'); })->middleware(['auth', 'cekRole:vip,admin'])->name('dashboard');
-Route::get('/upgrade', function () { return view('upgrade'); })->middleware(['auth', 'cekRole:user,admin'])->name('upgrade');
+Route::get('/profile', function () { return view('profile'); })->middleware(['auth', 'cekRole:user,admin'])->name('profile');
 Route::get('belajar-trading', function () {return view('belajar-trading');})->middleware('auth');

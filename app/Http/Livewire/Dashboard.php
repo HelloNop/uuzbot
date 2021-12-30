@@ -9,9 +9,6 @@ use Livewire\Component;
 class Dashboard extends Component
 {
     public $time;
-    public $candle;
-    public $randomNumber;
-
 
     public function render()
     {
@@ -20,14 +17,13 @@ class Dashboard extends Component
         $this->randomNumber = rand(0,100);
 
         return view('livewire.dashboard',[
-            'markets' => Market::has('sinyals')->with('sinyals')->get()->all()
+            'markets' => Market::with('sinyals')->get()->all()
         ]);
     }
 
-    public function candleShow($id)
+    public function showCandle($id)
     {
         $market = Market::find($id);
-        $this->candle = $market->candle;
         $this->emit('candleShowed', $market->id);
     }
 }

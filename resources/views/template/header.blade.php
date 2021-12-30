@@ -72,20 +72,20 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            {{-- <div class="dropdown-inner">
+                                            <div class="dropdown-inner">
                                                 <ul class="link-list">
                                                     <li>
-                                                        <a href="html/user-profile-regular.html"><em
+                                                        <a href="/profile"><em
                                                                 class="icon ni ni-user-alt"></em><span>View
                                                                 Profile</span></a>
                                                     </li>
-                                                    <li>
+                                                    {{-- <li>
                                                         <a href="html/user-profile-setting.html"><em
                                                                 class="icon ni ni-setting-alt"></em><span>Account
                                                                 Setting</span></a>
-                                                    </li>
+                                                    </li> --}}
                                                 </ul>
-                                            </div> --}}
+                                            </div>
                                             <div class="dropdown-inner">
                                                 <ul class="link-list">
                                                     <li>

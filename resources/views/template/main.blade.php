@@ -13,13 +13,11 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('assets/css/dashlite.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/editors/summernote.css')}}">
-    <link rel="stylesheet" href="{{ asset('assets/css/chart.css')}}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="{{asset('assets/js/charts/animated.js')}}"></script>
-    <script src="{{asset('assets/js/charts/core.js')}}"></script>
-    <script src="{{asset('assets/js/charts/charts.js')}}"></script>
-    <script src="{{asset('assets/js/charts/dark.js')}}"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Dark.js"></script>
     @livewireStyles
     @livewireScripts
 </head>

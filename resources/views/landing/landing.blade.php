@@ -6,12 +6,12 @@
 <div class="header-content my-auto py-5 is-dark">
     <div class="container">
         <div class="row flex-lg-row-reverse align-items-center justify-content-between g-gs">
-            <div class="col-lg-6 mt-lg-0 mt-n4">
-                <div class="header-image header-image-s2">
+            <div class="col-lg-6 mt-lg-0 mt-2 ">
+                <div class="header-image header-image-s2 p-4">
                     <img src="images/home.png" alt="">
                 </div><!-- .header-image -->
             </div><!-- .col- -->
-            <div class="col-lg-5 col-md-10">
+            <div class="col-lg-5 col-md-10 order-first order-md-last">
                 <div class="header-caption">
                     <h1 class="header-title fw-medium">Sinyal Trading Akurat Profit Setiap Hari </h1>
                     <div class="header-text">

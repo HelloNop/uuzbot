@@ -106,7 +106,8 @@
         <div class="nk-block-between-md g-3">
             <div class="g">
                 <ul class="pagination justify-content-center justify-content-md-start">
-                    {{$sinyals->links()}}
+
+                    {{ $sinyals->onEachSide(3)->links() }}
                 </ul>
             </div>
         </div>
