@@ -27,7 +27,7 @@
                                 @if (Auth::user()->roles === 'admin')
                                 <li class="nk-menu-hr"></li>
                                 <li class="nk-menu-item">
-                                    <a href="market" class="nk-menu-link" title="Market">
+                                    <a href="/market" class="nk-menu-link" title="Market">
                                         <span class="nk-menu-icon"><em class="icon ni ni-bar-c"></em></span>
                                     </a>
                                 </li>

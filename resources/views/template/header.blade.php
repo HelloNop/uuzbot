@@ -18,17 +18,37 @@
                                                 <ul class="list-apps">
                                                     <li>
                                                         <a href="/dashboard">
-                                                            <span class="list-apps-media"><em
-                                                                    class="icon ni ni-dashlite bg-primary text-white"></em></span>
+                                                            <span class="list-apps-media"><em class="icon ni ni-speed"></em></span>
                                                             <span class="list-apps-title">Dashboard</span>
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="http://uuzbot.test/belajar-trading">
+                                                        <a href="/belajar-trading">
                                                             <span class="list-apps-media"><em class="icon ni ni-book-read"></em></span>
                                                             <span class="list-apps-title">Edukasi</span>
                                                         </a>
                                                     </li>
+                                            {{-- menu mobile full --}}
+                                            @if (Auth::user()->roles === 'admin')
+                                                    <li>
+                                                        <a href="/market">
+                                                            <span class="list-apps-media"><em class="icon ni ni-bar-c"></em></span>
+                                                            <span class="list-apps-title">Market</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/sinyal">
+                                                            <span class="list-apps-media"><em class="icon ni ni-activity-round"></em></span>
+                                                            <span class="list-apps-title">Sinyal</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/user-list">
+                                                            <span class="list-apps-media"><em class="icon ni ni-users"></em></span>
+                                                            <span class="list-apps-title">User</span>
+                                                        </a>
+                                                    </li>
+                                            @endif
                                                 </ul>
                                             </div>
                                             <!-- .nk-dropdown-body -->
