@@ -1,5 +1,7 @@
 @extends('landing.layouts.app')
 
+@section('title', 'Reset Password')
+
 @section('landing')
 <div class="nk-content ">
     <div class="nk-block nk-block-middle nk-auth-body  wide-xs">

@@ -15,5 +15,7 @@
 
         @livewire('dashboard')
         @livewire('candle-stick')
+
 </div>
+
 @endsection

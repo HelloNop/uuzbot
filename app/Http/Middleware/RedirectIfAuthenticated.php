@@ -28,9 +28,12 @@ class RedirectIfAuthenticated
             case 'vip':
                 return redirect('/dashboard');
                 break;
+            case 'user':
+                return redirect('/profile');
+                break;
 
             default:
-                return redirect('/upgrade');
+                return redirect('/');
                 break;
             }
         }

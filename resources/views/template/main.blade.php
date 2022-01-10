@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="author" content="Softnio" />
+    <meta name="author" content="uuzbot" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="" content="" />
     <!-- Fav Icon  -->
@@ -11,18 +11,19 @@
     <!-- Page Title  -->
     <title> @yield('title') - UuzBot</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="{{ asset('assets/css/dashlite.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/editors/summernote.css')}}">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Dark.js"></script>
+    <link rel="stylesheet" href="{{ asset('assets/css/dashlite.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/editors/summernote.css') }}">
+    <script defer src="{{ url('https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js') }}"></script>
+    <script src="{{ url('https://cdn.amcharts.com/lib/5/index.js') }}"></script>
+    <script src="{{ url('https://cdn.amcharts.com/lib/5/xy.js') }}"></script>
+    <script src="{{ url('https://cdn.amcharts.com/lib/5/themes/Animated.js') }}"></script>
+    <script src="{{ url('https://cdn.amcharts.com/lib/5/themes/Dark.js') }}"></script>
     @livewireStyles
     @livewireScripts
 </head>
 
 <body class="nk-body npc-apps apps-only has-apps-sidebar dark-mode" theme="dark">
+
     <div class="nk-app-root">
         @include('template.navigation')
         <div class="nk-main">
@@ -43,10 +44,10 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="{{ asset('assets/js/bundle.js')}}"></script>
-    <script src="{{ asset('assets/js/scripts.js')}}"></script>
-    <script src="{{asset ('assets/js/libs/editors/summernote.js')}}"></script>
-    <script src="{{asset('assets/js/editors.js')}}"></script>
+    <script src="{{ asset('assets/js/bundle.js') }}"></script>
+    <script src="{{ asset('assets/js/scripts.js') }}"></script>
+    <script src="{{ asset ('assets/js/libs/editors/summernote.js')}}"></script>
+    <script src="{{ asset('assets/js/editors.js') }}"></script>
 
 
 </body>

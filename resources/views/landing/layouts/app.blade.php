@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="shortcut icon" href="{{ asset('./images/favicon.png') }}">
     <!-- Page Title  -->
-    <title>UuzBot - @yield('title')</title>
+    <title> @yield('title') - UuzBot</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('landing/css/dashlite.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('landing/css/theme.css')}}" />
 
 </head>
 
-<body class="nk-body bg-white npc-landing ">
+<body class="nk-body bg-white npc-landing">
     <div class="nk-app-root">
         <!-- main @s -->
         <div class="nk-main ">

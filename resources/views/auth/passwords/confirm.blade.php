@@ -1,5 +1,7 @@
 @extends('landing.layouts.app')
 
+@section('title', 'Reset Password')
+
 @section('landing')
 <div class="container">
     <div class="row justify-content-center">

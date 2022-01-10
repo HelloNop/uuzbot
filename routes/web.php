@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', function () {
     return view('landing.landing');
@@ -46,5 +46,6 @@ Route::middleware(['auth', 'cekRole:admin'])->group(function () {
 
 
 Route::get('/dashboard', function () { return view('dashboard'); })->middleware(['auth', 'cekRole:vip,admin'])->name('dashboard');
-Route::get('/profile', function () { return view('profile'); })->middleware(['auth', 'cekRole:user,admin'])->name('profile');
+Route::get('/profile', function () { return view('profile'); })->middleware(['auth'])->name('profile');
 Route::get('belajar-trading', function () {return view('belajar-trading');})->middleware('auth');
+// Route::get('upgrade', function () {return view('upgrade');})->middleware('auth');

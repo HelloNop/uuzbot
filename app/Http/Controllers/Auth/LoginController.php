@@ -40,7 +40,6 @@ class LoginController extends Controller
             case 'user' :
                 return '/profile';
                 break;
-
             default:
                 return '/';
                 break;
@@ -56,4 +55,5 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
 }
